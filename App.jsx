@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     marginRight: 10,
   },
+  
 });
 
 export default App;
