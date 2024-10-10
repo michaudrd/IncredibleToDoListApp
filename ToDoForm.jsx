@@ -10,7 +10,7 @@ import {
   Button
 } from "react-native";
 
-function ToDoForm() {
+function ToDoList() {
     return (
         <View style={styles.form}>
         <TextInput
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default ToDoForm;
+export default ToDoList;
