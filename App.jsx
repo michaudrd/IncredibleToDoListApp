@@ -15,14 +15,21 @@ import {
   TextInput,
   Button
 } from 'react-native';
+import {useState} from "react";
 import ToDoList from "./ToDoList";
 import ToDoForm from "./ToDoForm";
 
-
 function App() {
+  
+  const [tasks, setTasks] = useState([
+    'Do laundry',
+    'Go to gym',
+    'Walk dog'
+  ]);
+
   return (
     <SafeAreaView>
-      <ToDoList />
+      <ToDoList tasks={tasks}/>
       <ToDoForm />
     </SafeAreaView>
   );
